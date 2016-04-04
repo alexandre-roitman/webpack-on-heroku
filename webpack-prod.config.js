@@ -10,7 +10,7 @@ module.exports = {
         './src/index.jsx'
     ],
     output: {
-        path: path.join(__dirname, config.publicFolder),
+        path: path.join(path.resolve(path.dirname()), config.publicFolder),
         publicPath: '/' + config.publicFolder + '/',
         filename: 'bundle.js'
     },
