@@ -1,25 +1,26 @@
-## Installation Guide:
+## Prerequisite:
+- [Heroku](https://www.heroku.com/) user.
+- [Heroku Toolbelt](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up) installed.
 
-### Phase 1:
+## Installation Guide:
+- Fork / Clone the project
 ```bash
 git clone git@github.com:akaspi/webpack-on-heroku.git
 cd webpack-on-heroku
 npm i
 ```
 
-### Phase 2:
-1. Download Heroku Toolbelt from [here](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
-2. Login to Heroku:
+- Login to Heroku:
 ```bash
 heroku login
 ```
-3. Create app:
+
+- Create an Heroku application:
 ```bash
 heroku create
 ```
 
-### Phase 3
-Deploy app:
+- Deploy the app:
 ```bash
 git push heroku master
 ```
