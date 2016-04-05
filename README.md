@@ -20,6 +20,11 @@ heroku login
 heroku create
 ```
 
+- Set 'production' environment variable:
+```bash
+heroku config:set NODE_ENV=production
+```
+
 - Deploy the app:
 ```bash
 git push heroku master
