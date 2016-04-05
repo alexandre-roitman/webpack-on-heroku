@@ -1,4 +1,4 @@
-## Prerequisite:
+## Prerequisites:
 - [Heroku](https://www.heroku.com/) user.
 - [Heroku Toolbelt](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up) installed.
 
