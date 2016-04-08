@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import Form from './Form.jsx';
 
 export default React.createClass({
     displayName: 'App',
@@ -8,7 +9,7 @@ export default React.createClass({
     render() {
         return (
             <div>
-                Hello, World!
+                <Form />
             </div>
         );
     }
