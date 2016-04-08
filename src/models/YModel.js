@@ -1,17 +1,7 @@
 var Rx = require('rx');
 var update = require('react/lib/update');
 
-var YahharoKeys = require('../keys/yahharo-keys');
-var YahharoIntent = require('../intents/yahharo-intent');
-
 var subject = new Rx.ReplaySubject(1);
-
-var yahharo = 'やっはろー';
-var haroharo = 'はろはろー';
-
-var state = {
-  greeting: yahharo
-};
 
 function switchGreeting() {
   state = update(state, {

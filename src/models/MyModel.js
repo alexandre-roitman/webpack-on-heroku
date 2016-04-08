@@ -1,6 +1,5 @@
 var Rx = require('rx');
 var update = require('react/lib/update');
-var Keys = require('../intents/keys');
 var Intent = require('../intents/MyIntent');
 
 var subject = new Rx.ReplaySubject(1);
@@ -18,16 +17,7 @@ function incrementCounter() {
   subject.onNext(state);
 }
 
-Intent.subject.subscribe(function (payload) {
-  switch(payload.key) {
-    case Keys.INCREMENT_COUNTER:
-      incrementCounter();
-      break;
-    default:
-      console.warn(`${payload.key} not recognized in model.`);
-  }
-});
-
+Intent.subject.subscribe(incrementCounter);
 subject.onNext(state);
 
 module.exports = {

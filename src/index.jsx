@@ -9,9 +9,7 @@ import Model from './models/MyModel';
 var AppObservable = Rx.Observable.combineLatest(
   Model.subject,
   function (CounterState) {
-    return {
-      CounterState: CounterState
-    };
+    return CounterState;
   }
 );
 
