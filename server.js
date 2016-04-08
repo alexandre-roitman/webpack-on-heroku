@@ -37,12 +37,12 @@ if (isDevelopment) {
 
 var db = require("seraph")(process.env.GRAPHENEDB_URL || 'http://app49254525-V8nVGY:W1BRqJoehLMb06gYIi62@app49254525v8nvgy.sb02.stations.graphenedb.com:24789');
 console.log(db);
-db.save({ name: "Test-Man", age: 40 }, function(err, node) {
-  if (err) throw err;
-  console.log("Test-Man inserted.");
+// db.save({ name: "Test-Man", age: 40 }, function(err, node) {
+//   if (err) throw err;
+//   console.log("Test-Man inserted.");
 
-  db.delete(node, function(err) {
-    if (err) throw err;
-    console.log("Test-Man away!");
-  });
-});
+//   db.delete(node, function(err) {
+//     if (err) throw err;
+//     console.log("Test-Man away!");
+//   });
+// });
